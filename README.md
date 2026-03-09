@@ -64,6 +64,8 @@ presentation/
 
 ### 1️⃣ Executive Crime Dashboard
 
+[![Executive Crime Dashboard](screenshots/tableau_executive_crime_dashboard.png)](https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisDashboard?publish=yes)
+
 This dashboard provides a **high-level overview of crime activity in Chicago**, including:
 
 - Total Crime Incidents  
@@ -72,12 +74,11 @@ This dashboard provides a **high-level overview of crime activity in Chicago**, 
 - Top Crime Types  
 - Crime Trends Over Time  
 
-🔗 **Open Interactive Dashboard**  
-https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisDashboard?publish=yes
-
 ---
 
 ### ⏱️ Time & Arrest Insights
+
+[![Time & Arrest Insights](screenshots/tableau_dashboard_time_arrest_insights.png)](https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisTimeArrestInsights?publish=yes)
 
 This dashboard analyzes **crime incidents across different hours of the day** and examines arrest outcomes.
 
@@ -86,14 +87,13 @@ Key insights include:
 - Crime incidents by hour  
 - Arrest rate distribution  
 - Arrest vs No Arrest comparison  
-- Time-based crime patterns  
-
-🔗 **Open Interactive Dashboard**  
-https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisTimeArrestInsights?publish=yes
+- Time-based crime patterns
 
 ---
 
 ### 📍 Geographic Crime Insights
+
+[![Geographic Crime Insights](screenshots/tableau_dashboard_geographic_crime_insights.png)](https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisGeographicCrimeInsights?publish=yes)
 
 This dashboard highlights **crime distribution across Chicago neighborhoods** using geographic visualization.
 
@@ -101,10 +101,7 @@ It identifies:
 
 - Crime hotspot density  
 - Location-based crime patterns  
-- Geographic distribution of crime types  
-
-🔗 **Open Interactive Dashboard**  
-https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisGeographicCrimeInsights?publish=yes
+- Geographic distribution of crime types 
 
 ---
 
