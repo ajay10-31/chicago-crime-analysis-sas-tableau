@@ -1,0 +1,2304 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <LayerControlWidget />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Chicago_Crime_Analysis_Ajay_2018_2020' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Chicago_Crime_Ajay_2018_2020' inline='true' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Chicago_Crime_Ajay_2018_2020' name='textscan.1ugsfx50b0jzk816n9nh10lah5h3'>
+            <connection class='textscan' directory='C:/Users/ajayj/Downloads' filename='Chicago_Crime_Ajay_2018_2020.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ugsfx50b0jzk816n9nh10lah5h3' name='Chicago_Crime_Ajay_2018_2020.csv' table='[Chicago_Crime_Ajay_2018_2020#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Primary Type' ordinal='1' />
+            <column datatype='string' name='Description' ordinal='2' />
+            <column datatype='string' name='Location Description' ordinal='3' />
+            <column datatype='integer' name='Arrest' ordinal='4' />
+            <column datatype='integer' name='Domestic' ordinal='5' />
+            <column datatype='real' name='District' ordinal='6' />
+            <column datatype='integer' name='Beat' ordinal='7' />
+            <column datatype='real' name='Ward' ordinal='8' />
+            <column datatype='real' name='Community Area' ordinal='9' />
+            <column datatype='real' name='Latitude' ordinal='10' />
+            <column datatype='real' name='Longitude' ordinal='11' />
+            <column datatype='integer' name='Year' ordinal='12' />
+            <column datatype='integer' name='Month' ordinal='13' />
+            <column datatype='integer' name='Hour' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary Type]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Primary Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Description]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Location Description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrest</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Arrest]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Arrest</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domestic</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Domestic]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Domestic</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Beat]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Beat</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ward</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ward]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Ward</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Community Area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Community Area]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Community Area</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[Chicago_Crime_Ajay_2018_2020.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Arrest]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No Arrest' />
+          <alias key='1' value='Arrest Made' />
+        </aliases>
+      </column>
+      <column caption='Total Arrests' datatype='integer' name='[Calculation_1830183777611777]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Arrest])' />
+      </column>
+      <column caption='Hour AMPM' datatype='string' name='[Calculation_1830183783809026]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Hour] = 0 THEN &quot;12 AM&quot;&#13;&#10;ELSEIF [Hour] &lt; 12 THEN STR([Hour]) + &quot; AM&quot;&#13;&#10;ELSEIF [Hour] = 12 THEN &quot;12 PM&quot;&#13;&#10;ELSE STR([Hour]-12) + &quot; PM&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Title Year' datatype='string' name='[Calculation_1830183812661252]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF MIN([Year]) = MAX([Year]) THEN&#13;&#10;STR(MIN([Year]))&#13;&#10;ELSE&#13;&#10;STR(MIN([Year])) + &quot; - &quot; + STR(MAX([Year]))&#13;&#10;END' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Domestic]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Primary Type]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <column caption='Chicago_Crime_Ajay_2018_2020.csv' datatype='table' name='[__tableau_internal_object_id__].[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]' role='measure' type='quantitative' />
+      <group caption='Action (Arrest)' hidden='true' name='[Action (Arrest)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Arrest]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Primary Type)' hidden='true' name='[Action (Primary Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Primary Type]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1f24rga0uy2d6w1523uth1xb3sc2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/26/2026 12:18:50 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>727944</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Primary Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Primary Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Primary Type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1120</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location Description</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>281</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrest</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Arrest]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrest</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Domestic</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Domestic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Domestic</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>District</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>District</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Beat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Beat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Beat</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>299</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ward</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Ward]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ward</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Community Area</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Community Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Community Area</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160674</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160674</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hour</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Chicago_Crime_Ajay_2018_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Chicago_Crime_Ajay_2018_2020.csv' id='Chicago_Crime_Ajay_2018_2020.csv_C74795E688984798AB427572C2A4FB70'>
+            <properties context=''>
+              <relation connection='textscan.1ugsfx50b0jzk816n9nh10lah5h3' name='Chicago_Crime_Ajay_2018_2020.csv' table='[Chicago_Crime_Ajay_2018_2020#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='Primary Type' ordinal='1' />
+                  <column datatype='string' name='Description' ordinal='2' />
+                  <column datatype='string' name='Location Description' ordinal='3' />
+                  <column datatype='integer' name='Arrest' ordinal='4' />
+                  <column datatype='integer' name='Domestic' ordinal='5' />
+                  <column datatype='real' name='District' ordinal='6' />
+                  <column datatype='integer' name='Beat' ordinal='7' />
+                  <column datatype='real' name='Ward' ordinal='8' />
+                  <column datatype='real' name='Community Area' ordinal='9' />
+                  <column datatype='real' name='Latitude' ordinal='10' />
+                  <column datatype='real' name='Longitude' ordinal='11' />
+                  <column datatype='integer' name='Year' ordinal='12' />
+                  <column datatype='integer' name='Month' ordinal='13' />
+                  <column datatype='integer' name='Hour' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_DEDCAEE97CF242CB8BDE76FC190DAD69]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Chicago Crime Analysis: Time &amp; Arrest Insights' type='sheet' worksheet='Arrest Outcome Distribution' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Chicago Crime Analysis: Time &amp; Arrest Insights' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_C18B9D5AA1434D06A1C75CC1DEB27A33]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Chicago Crime Analysis: Geographic &amp; Crime Insights' type='sheet' worksheet='Top 10 Crime Types' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Chicago Crime Analysis: Geographic &amp; Crime Insights' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Arrest Outcome Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='14'>Arrest Outcome Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column aggregation='Sum' datatype='integer' name='[Arrest]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No Arrest' />
+                <alias key='1' value='Arrest Made' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Arrest]' derivation='None' name='[none:Arrest:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[pcto:cnt:ID:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([ID])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Hour:ok]' member='0' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='1' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='2' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='3' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='4' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='5' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='6' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='7' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='8' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='9' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='10' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='11' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='12' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='13' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='14' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='15' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='16' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='17' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='18' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='19' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='20' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='21' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='22' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='23' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Arrest:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Arrest:ok]' value='157' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[pcto:cnt:ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]</rows>
+        <cols>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Arrest:ok]</cols>
+      </table>
+      <simple-id uuid='{A9718CD1-2A9C-4519-9D78-A1BE0438230C}' />
+    </worksheet>
+    <worksheet name='Arrest Rate by Hour'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='14'>Arrest Rate by Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column aggregation='Sum' datatype='integer' name='[Arrest]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No Arrest' />
+                <alias key='1' value='Arrest Made' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Arrest]' derivation='Avg' name='[avg:Arrest:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[Action (Arrest)]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[Arrest]' member='0' />
+              <groupfilter function='member' level='[Arrest]' member='1' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[Action (Arrest)]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Arrest:qk]' scope='rows' value='Arrest Rate (%)' />
+            <encoding attr='space' class='0' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Arrest:qk]' field-type='quantitative' max='0.29999999999999999' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Arrest:qk]' value='Times New Roman' />
+            <format attr='text-format' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Arrest:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3953038454055786' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Arrest:qk]</rows>
+        <cols>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]</cols>
+      </table>
+      <simple-id uuid='{3BC1C88B-E605-4C84-A0CF-13BE5052ACA5}' />
+    </worksheet>
+    <worksheet name='Crime Hotspot Density Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='14'>Crime Hotspot Density Map</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='string' name='[Primary Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Latitude]' derivation='Avg' name='[avg:Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude]' derivation='Avg' name='[avg:Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ID]' derivation='None' name='[none:ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[Action (Primary Type)]'>
+            <groupfilter function='level-members' level='[Primary Type]' user:ui-action-filter='[Action2_C18B9D5AA1434D06A1C75CC1DEB27A33]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([ID])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Hour:ok]' member='0' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='1' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='2' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='3' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='4' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='5' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='6' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='7' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='8' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='9' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='10' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='11' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='12' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='13' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='14' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='15' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='16' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='17' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='18' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='19' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='20' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='21' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='22' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='23' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2020' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[Action (Primary Type)]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Longitude:qk]' field-type='quantitative' max='-9740889.4368720353' min='-9767717.9844998177' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Latitude:qk]' field-type='quantitative' max='5155842.5911701592' min='5128902.2792268945' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Heatmap' />
+            <encodings>
+              <lod column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:ID:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='density-color' palette='orange_10_0' type='interpolated' />
+                <format attr='density-intensity' value='0.83462905883789062' />
+                <format attr='density-kernel-size' value='1.087458610534668' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1329' />
+                <format attr='maxwidth' value='1329' />
+                <format attr='minheight' value='692' />
+                <format attr='maxheight' value='692' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Latitude:qk]</rows>
+        <cols>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{7C34DB65-51B5-4E76-BFA6-11439A330491}' />
+    </worksheet>
+    <worksheet name='Crime Incidents by Hour'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontsize='14'>Crime Incidents by Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column aggregation='Sum' datatype='integer' name='[Arrest]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No Arrest' />
+                <alias key='1' value='Arrest Made' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[Action (Arrest)]'>
+            <groupfilter function='level-members' level='[Arrest]' user:ui-action-filter='[Action1_DEDCAEE97CF242CB8BDE76FC190DAD69]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]' direction='ASC' />
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[Action (Arrest)]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' scope='rows' value='Number of Incidents' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' value='9' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='18' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' value='Select Year'>
+              <formatted-text>
+                <run fontalignment='1'>Select Year</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]</rows>
+        <cols>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]</cols>
+      </table>
+      <simple-id uuid='{092A6092-CF6F-4830-BA6E-ED4DD093AE02}' />
+    </worksheet>
+    <worksheet name='Dynamic Title'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column caption='Title Year' datatype='string' name='[Calculation_1830183812661252]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF MIN([Year]) = MAX([Year]) THEN&#13;&#10;STR(MIN([Year]))&#13;&#10;ELSE&#13;&#10;STR(MIN([Year])) + &quot; - &quot; + STR(MAX([Year]))&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1830183812661252]' derivation='User' name='[usr:Calculation_1830183812661252:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[usr:Calculation_1830183812661252:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Times New Roman' fontsize='24'><![CDATA[Chicago Crime Analysis Dashboard : <]]></run>
+                <run bold='true' fontname='Times New Roman' fontsize='24'>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[usr:Calculation_1830183812661252:nk]</run>
+                <run bold='true' fontname='Times New Roman' fontsize='24'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1ADB0EA5-9DCA-4690-B5B2-655D444AF030}' />
+    </worksheet>
+    <worksheet name='KPI_Arrest_Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column aggregation='Sum' datatype='integer' name='[Arrest]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No Arrest' />
+                <alias key='1' value='Arrest Made' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Arrest]' derivation='Avg' name='[avg:Arrest:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Arrest:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Arrest:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Times New Roman' fontsize='14'>Arrest Rate</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Times New Roman' fontsize='22'><![CDATA[<[federated.0neznza1uf97lm1g9rqko0zxo8xk].[avg:Arrest:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{96F900FD-2C60-4382-8D85-31A99BE8D7A7}' />
+    </worksheet>
+    <worksheet name='KPI_Most_Active_Hour'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column caption='Hour AMPM' datatype='string' name='[Calculation_1830183783809026]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Hour] = 0 THEN &quot;12 AM&quot;&#13;&#10;ELSEIF [Hour] &lt; 12 THEN STR([Hour]) + &quot; AM&quot;&#13;&#10;ELSEIF [Hour] = 12 THEN &quot;12 PM&quot;&#13;&#10;ELSE STR([Hour]-12) + &quot; PM&quot;&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1830183783809026]' derivation='None' name='[none:Calculation_1830183783809026:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([ID])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Hour:ok]' member='0' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='1' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='2' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='3' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='4' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='5' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='6' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='7' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='8' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='9' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='10' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='11' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='12' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='13' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='14' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='15' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='16' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='17' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='18' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='19' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='20' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='21' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='22' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='23' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' />
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]' />
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Calculation_1830183783809026:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Times New Roman' fontsize='14'>Peak Crime Hour</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Times New Roman' fontsize='22'><![CDATA[<[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Calculation_1830183783809026:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E94C4947-3388-4AD1-ADB0-C10EDC9C27D0}' />
+    </worksheet>
+    <worksheet name='KPI_Top_Crime_Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Primary Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Primary Type]' derivation='None' name='[none:Primary Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Primary Type:nk]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([ID])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Primary Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Primary Type:nk]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='306' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Primary Type:nk]' />
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Times New Roman' fontsize='14'>Top Crime Type</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Times New Roman' fontsize='22'><![CDATA[<[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Primary Type:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9ACB6858-1479-4AB1-984A-54515AC9FB4C}' />
+    </worksheet>
+    <worksheet name='KPI_Total_Arrests'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column aggregation='Sum' datatype='integer' name='[Arrest]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No Arrest' />
+                <alias key='1' value='Arrest Made' />
+              </aliases>
+            </column>
+            <column caption='Total Arrests' datatype='integer' name='[Calculation_1830183777611777]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Arrest])' />
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1830183777611777]' derivation='User' name='[usr:Calculation_1830183777611777:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[usr:Calculation_1830183777611777:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Times New Roman' fontsize='14'>Total Arrests</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Times New Roman' fontsize='22'><![CDATA[<[federated.0neznza1uf97lm1g9rqko0zxo8xk].[usr:Calculation_1830183777611777:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B2ABF57E-6487-4115-8CDB-881B87A87B29}' />
+    </worksheet>
+    <worksheet name='KPI_Total_Crimes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' filter-group='4'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Times New Roman' fontsize='14'>Total Crimes</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Times New Roman' fontsize='22'><![CDATA[<[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{082FF123-7B0F-4DBC-93F0-4E18A86A08F8}' />
+    </worksheet>
+    <worksheet name='Top 10 Crime Types'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='14'>Top 10 Crime Types</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+            <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Primary Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Primary Type]' derivation='None' name='[none:Primary Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([ID])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Hour:ok]' member='0' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='1' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='2' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='3' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='4' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='5' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='6' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='7' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='8' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='9' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='10' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='11' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='12' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='13' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='14' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='15' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='16' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='17' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='18' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='19' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='20' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='21' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='22' />
+                  <groupfilter function='member' level='[none:Hour:ok]' member='23' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Primary Type:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([ID])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Primary Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Primary Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Primary Type:nk]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]</column>
+            <column>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Hour:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' scope='cols' value='Number of Incidents' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' value='Select Year'>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Times New Roman' fontsize='12'>Select Year</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7691160440444946' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Primary Type:nk]</rows>
+        <cols>[federated.0neznza1uf97lm1g9rqko0zxo8xk].[cnt:ID:qk]</cols>
+      </table>
+      <simple-id uuid='{186EE852-523A-4B57-AE08-235478E58866}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Chicago Crime Analysis Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+        <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='40' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone h='98000' id='38' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+              <zone h='98000' id='36' type-v2='layout-basic' w='98666' x='667' y='1000'>
+                <zone h='71749' id='27' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                  <zone h='71749' id='25' type-v2='layout-basic' w='98666' x='667' y='1000'>
+                    <zone h='71749' id='21' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                      <zone h='71749' id='19' type-v2='layout-basic' w='98666' x='667' y='1000'>
+                        <zone h='38578' id='15' param='horz' type-v2='layout-flow' w='49332' x='667' y='34171'>
+                          <zone h='38578' id='11' name='Crime Incidents by Hour' w='49332' x='667' y='34171'>
+                            <layout-cache cell-count-w='24' minheight='170' non-cell-size-w='72' type-h='scalable' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                        <zone h='38578' id='12' name='Arrest Rate by Hour' w='49334' x='49999' y='34171'>
+                          <layout-cache cell-count-w='24' minheight='189' non-cell-size-w='73' type-h='scalable' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='19820' id='28' param='horz' type-v2='layout-flow' w='98666' x='667' y='14351'>
+                          <zone h='19820' id='29' name='KPI_Total_Crimes' show-title='false' w='19733' x='667' y='14351'>
+                            <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='19820' id='30' name='KPI_Total_Arrests' show-title='false' w='19733' x='20400' y='14351'>
+                            <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='19820' id='31' name='KPI_Arrest_Rate' show-title='false' w='19733' x='40133' y='14351'>
+                            <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='19820' id='32' name='KPI_Top_Crime_Type' show-title='false' w='19733' x='59866' y='14351'>
+                            <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='19820' id='33' name='KPI_Most_Active_Hour' show-title='false' w='19733' x='79599' y='14351'>
+                            <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                        <zone h='13351' id='42' param='horz' type-v2='layout-flow' w='11250' x='88083' y='1000'>
+                          <zone h='13351' id='41' mode='dropdown' name='Crime Incidents by Hour' param='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' type-v2='filter' values='database' w='11250' x='88083' y='1000'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                        <zone h='13351' id='43' name='Dynamic Title' show-title='false' w='87416' x='667' y='1000'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='26251' id='34' param='horz' type-v2='layout-flow' w='98666' x='667' y='72749'>
+                  <zone fixed-size='76' forceUpdate='true' h='26251' id='44' is-fixed='true' type-v2='text' w='7000' x='667' y='72749'>
+                    <formatted-text>
+                      <run fontalignment='1' fontcolor='#000000' fontname='Times New Roman'>Number of Incidents</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#ffffff' />
+                    </zone-style>
+                  </zone>
+                  <zone h='26251' id='35' name='Arrest Outcome Distribution' w='91665' x='7667' y='72749'>
+                    <layout-cache cell-count-w='2' minheight='175' non-cell-size-w='40' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f2f2f2' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1850' minheight='1850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='52' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='51' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone fixed-size='99' h='13351' id='43' is-fixed='true' name='Dynamic Title' show-title='false' w='87416' x='667' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='150' h='19820' id='29' is-fixed='true' name='KPI_Total_Crimes' show-title='false' w='19733' x='667' y='14351'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='150' h='19820' id='30' is-fixed='true' name='KPI_Total_Arrests' show-title='false' w='19733' x='20400' y='14351'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='150' h='19820' id='31' is-fixed='true' name='KPI_Arrest_Rate' show-title='false' w='19733' x='40133' y='14351'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='150' h='19820' id='32' is-fixed='true' name='KPI_Top_Crime_Type' show-title='false' w='19733' x='59866' y='14351'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='150' h='19820' id='33' is-fixed='true' name='KPI_Most_Active_Hour' show-title='false' w='19733' x='79599' y='14351'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13351' id='41' mode='dropdown' name='Crime Incidents by Hour' param='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' type-v2='filter' values='database' w='11250' x='88083' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38578' id='11' is-fixed='true' name='Crime Incidents by Hour' w='49332' x='667' y='34171'>
+                  <layout-cache cell-count-w='24' minheight='170' non-cell-size-w='72' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38578' id='12' is-fixed='true' name='Arrest Rate by Hour' w='49334' x='49999' y='34171'>
+                  <layout-cache cell-count-w='24' minheight='189' non-cell-size-w='73' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='76' forceUpdate='true' h='26251' id='44' type-v2='text' w='7000' x='667' y='72749'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Times New Roman'>Number of Incidents</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='202' h='26251' id='35' is-fixed='true' name='Arrest Outcome Distribution' w='91665' x='7667' y='72749'>
+                  <layout-cache cell-count-w='2' minheight='175' non-cell-size-w='40' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f2f2f2' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{722FABCE-45CD-4A2B-A0F8-913521A376A0}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Chicago Crime Analysis: Geographic &amp; Crime Insights'>
+      <style />
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Chicago_Crime_Ajay_2018_2020' name='federated.0neznza1uf97lm1g9rqko0zxo8xk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0neznza1uf97lm1g9rqko0zxo8xk'>
+        <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88000' id='10' param='horz' type-v2='layout-flow' w='98500' x='750' y='10875'>
+            <zone h='88000' id='8' type-v2='layout-basic' w='98500' x='750' y='10875'>
+              <zone h='52625' id='3' param='vert' type-v2='layout-flow' w='98500' x='750' y='10875'>
+                <zone fixed-size='453' h='52625' id='6' is-fixed='true' name='Crime Hotspot Density Map' w='98500' x='750' y='10875'>
+                  <layout-cache has-max-size-h='true' maxheight='739' minheight='739' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='8' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='35375' id='7' name='Top 10 Crime Types' w='98500' x='750' y='63500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='8' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9750' id='12' param='horz' type-v2='layout-flow' w='10167' x='89083' y='1125'>
+            <zone fixed-size='32' h='9000' id='11' is-fixed='true' mode='dropdown' name='Top 10 Crime Types' param='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' type-v2='filter' values='database' w='10167' x='89083' y='1125'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='9750' id='5' type-v2='text' w='88333' x='750' y='1125'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='22'>Chicago Crime Analysis: Geographic &amp; Crime Insights</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='9' />
+            <format attr='background-color' value='#f2f2f2' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='21' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone forceUpdate='true' h='9750' id='5' type-v2='text' w='88333' x='750' y='1125'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='22'>Chicago Crime Analysis: Geographic &amp; Crime Insights</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52625' id='6' is-fixed='true' name='Crime Hotspot Density Map' w='98500' x='750' y='10875'>
+                  <layout-cache has-max-size-h='true' maxheight='739' minheight='739' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='32' h='9000' id='11' mode='dropdown' name='Top 10 Crime Types' param='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' type-v2='filter' values='database' w='10167' x='89083' y='1125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='35375' id='7' is-fixed='true' name='Top 10 Crime Types' w='98500' x='750' y='63500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='9' />
+                <format attr='background-color' value='#f2f2f2' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7AC3FE9F-896D-4ED1-A79C-8E26C6F8F930}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Chicago Crime Analysis: Time &amp; Arrest Insights'>
+      <style />
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='3' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone forceUpdate='true' h='8250' id='5' type-v2='text' w='98666' x='667' y='1000'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='26'>Chicago Crime Analysis: Time &amp; Arrest Insights</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='40750' id='6' name='Crime Incidents by Hour' w='98666' x='667' y='9250'>
+              <layout-cache minheight='170' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='49000' id='7' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='49333' x='50000' y='50000'>
+            <zone h='49000' id='8' name='Arrest Rate by Hour' w='49333' x='50000' y='50000'>
+              <layout-cache cell-count-w='24' minheight='189' non-cell-size-w='88' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='49000' id='9' name='Arrest Outcome Distribution' w='49333' x='667' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='8' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f2f2f2' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone forceUpdate='true' h='8250' id='5' type-v2='text' w='98666' x='667' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='26'>Chicago Crime Analysis: Time &amp; Arrest Insights</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40750' id='6' is-fixed='true' name='Crime Incidents by Hour' w='98666' x='667' y='9250'>
+                  <layout-cache minheight='170' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Arrest Outcome Distribution' w='49333' x='667' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='8' is-fixed='true' name='Arrest Rate by Hour' w='49333' x='50000' y='50000'>
+                  <layout-cache cell-count-w='24' minheight='189' non-cell-size-w='88' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f2f2f2' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FB336DAE-8EFE-4F1F-B67E-3B70B367592B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='44'>
+    <window class='worksheet' name='Crime Incidents by Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{82432044-9E72-4406-8FE8-7670C894E815}' />
+    </window>
+    <window class='worksheet' name='Arrest Rate by Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4925A084-8A70-4266-BBB3-DB98AF1B6941}' />
+    </window>
+    <window class='worksheet' name='Arrest Outcome Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DCC20742-E5B4-438E-9653-B34D58DEAD06}' />
+    </window>
+    <window class='worksheet' name='Crime Hotspot Density Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+        <default-map-tool-selection tool='16' />
+        <layer-control toolbar-button-enabled='false' />
+      </viewpoint>
+      <simple-id uuid='{369D6FC2-F381-4696-A9CF-DF40582E87DE}' />
+    </window>
+    <window class='worksheet' name='Top 10 Crime Types'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0neznza1uf97lm1g9rqko0zxo8xk].[none:Year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D7F6C7B4-D9AE-4256-8276-0CBADAD36D6A}' />
+    </window>
+    <window class='worksheet' name='KPI_Total_Crimes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5B29860-B016-4CCD-A371-CDE6F4CD297C}' />
+    </window>
+    <window class='worksheet' name='KPI_Total_Arrests'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF7F192E-E02E-40A1-B2FE-008DE2C63443}' />
+    </window>
+    <window class='worksheet' name='KPI_Arrest_Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3DCE0620-F184-47A4-B160-D1FC11132713}' />
+    </window>
+    <window class='worksheet' name='KPI_Top_Crime_Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA2069A0-2384-4E9C-98FB-3131AAAE60E5}' />
+    </window>
+    <window class='worksheet' name='KPI_Most_Active_Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DAA32CFF-CC69-47E7-9C6E-A1D276C2A81E}' />
+    </window>
+    <window class='worksheet' name='Dynamic Title'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DC69BFE1-E44E-49CD-B910-31B36180F5C6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Chicago Crime Analysis: Time &amp; Arrest Insights'>
+      <viewpoints>
+        <viewpoint name='Arrest Outcome Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Arrest Rate by Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Crime Incidents by Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{79CA25A9-418D-48C1-905D-5B2978F6D521}' />
+    </window>
+    <window class='dashboard' name='Chicago Crime Analysis: Geographic &amp; Crime Insights'>
+      <viewpoints>
+        <viewpoint name='Crime Hotspot Density Map'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+          <layer-control toolbar-button-enabled='false' />
+        </viewpoint>
+        <viewpoint name='Top 10 Crime Types'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{9FA0A0F2-9FD1-4D3E-8120-CB8F27FE3A53}' />
+    </window>
+    <window class='dashboard' name='Chicago Crime Analysis Dashboard'>
+      <viewpoints>
+        <viewpoint name='Arrest Outcome Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Arrest Rate by Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Crime Incidents by Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Dynamic Title'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI_Arrest_Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI_Most_Active_Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI_Top_Crime_Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI_Total_Arrests'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI_Total_Crimes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{873B6D82-13E9-42F1-AFB0-83E372A2227F}' />
+    </window>
+  </windows>
+</workbook>
