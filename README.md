@@ -115,6 +115,24 @@ It identifies:
 
 Predictive modeling was performed using **SAS Enterprise Miner** to analyze crime patterns and build predictive models.
 
+---
+
+## 🤖 Clustering Analysis (SAS Enterprise Miner)
+
+| Clustering Workflow | Ward Cluster Distribution | Variable Importance |
+|---------------------|---------------------------|--------------------|
+| ![](screenshots/sas_clustering_workflow_pipeline.png) | ![](screenshots/sas_ward_cluster_distribution.png) | ![](screenshots/Variable%20Importance%20Plot.png) |
+
+---
+
+## 🔮 Predictive Modeling (SAS Enterprise Miner)
+
+| Predictive Pipeline | Model Comparison | ROC Curve | Best Model Performance |
+|--------------------|------------------|-----------|------------------------|
+| ![](screenshots/sas_predictive_modeling_pipeline.png) | ![](screenshots/sas_model_comparison_results.png) | ![](screenshots/sas_roc_model_performance.png) | ![](screenshots/sas_best_model_performance_fit_statics.png) |
+
+---
+
 ### Methods Used
 
 - Clustering Analysis  
