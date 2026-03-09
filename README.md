@@ -1,328 +1,163 @@
-\# Chicago Crime Analysis (2018–2020)
+# 🚔 Chicago Crime Analysis Dashboard  
+**Crime Insights & Predictive Analytics using Tableau & SAS Enterprise Miner**
 
+![Tableau](https://img.shields.io/badge/Tableau-Dashboard-blue)
+![SAS](https://img.shields.io/badge/SAS-Enterprise%20Miner-blue)
+![Python](https://img.shields.io/badge/Python-Data%20Preparation-yellow)
+![Domain](https://img.shields.io/badge/Domain-Crime%20Analytics-red)
 
+## 📘 Project Overview
 
-This project analyzes crime patterns in Chicago using data from the \*\*City of Chicago Open Data Portal\*\*.  
+This project presents an interactive Chicago Crime Analytics Dashboard developed using Tableau and supported by SAS Enterprise Miner modeling.
 
+The project analyzes crime patterns in Chicago using real-world crime data and focuses on identifying trends related to:
 
+Crime incidents over time
 
-The project combines:
+Arrest outcomes
 
+Peak crime hours
 
+Geographic crime hotspots
 
-\- Data exploration
+Crime type distribution
 
-\- Predictive modeling
+The goal of this project is to demonstrate data analytics, dashboard development, and predictive modeling skills using a structured analytical workflow.
 
-\- Interactive dashboards
+🎯 Business Objectives
 
+Analyze crime incidents across multiple years
 
+Identify peak crime hours
 
-using \*\*Tableau and SAS Enterprise Miner\*\*.
+Evaluate arrest outcomes and arrest rates
 
+Detect crime hotspots geographically
 
+Build predictive models using SAS Enterprise Miner
 
----
+Present insights through interactive dashboards
 
+🧰 Tools & Technologies
+Tool	Purpose
+Tableau	Interactive dashboard visualization
+SAS Enterprise Miner	Predictive modeling
+Python	Data preprocessing
+GitHub	Project documentation
+🗂️ Repository Structure
+chicago-crime-analysis-sas-tableau/
 
+README.md
+data/
+reports/
+sas/
+screenshots/
+tableau/
+presentation/
+📊 Tableau Dashboards
+1️⃣ Executive Crime Dashboard
 
-\# Tools \& Technologies
+This dashboard provides a high-level overview of crime activity in Chicago, including:
 
+Total Crime Incidents
 
+Total Arrests
 
-\- Tableau (Interactive Dashboards)
+Arrest Rate
 
-\- SAS Enterprise Miner (Predictive Modeling)
+Top Crime Types
 
-\- Python (Data Preparation)
+Crime Trends Over Time
 
-\- GitHub (Version Control)
+🔗 Open Interactive Dashboard
+https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisDashboard?publish=yes
 
+⏱️ Time & Arrest Insights
 
-
----
-
-
-
-\# Project Objectives
-
-
-
-This project aims to:
-
-
-
-\- Analyze crime trends across different years
-
-\- Identify peak crime hours
-
-\- Evaluate arrest rates
-
-\- Explore geographic crime hotspots
-
-\- Build predictive models using SAS
-
-
-
----
-
-
-
-\# Tableau Dashboards
-
-
-
-\## 1. Executive Crime Dashboard
-
-
-
-This dashboard provides a high-level overview of crime statistics including:
-
-
-
-\- Total crimes
-
-\- Total arrests
-
-\- Arrest rate
-
-\- Top crime type
-
-\- Peak crime hour
-
-
-
-!\[Executive Dashboard](screenshots/tableau\_executive\_crime\_dashboard.png)
-
-
-
-Interactive Dashboard:  
-
-PASTE\_TABLEAU\_LINK\_HERE
-
-
-
----
-
-
-
-\## 2. Time \& Arrest Insights
-
-
-
-This dashboard analyzes crime patterns across different hours of the day and evaluates arrest outcomes.
-
-
+This dashboard analyzes crime incidents across different hours of the day and examines arrest outcomes.
 
 Key insights include:
 
+Crime incidents by hour
 
+Arrest rate distribution
 
-\- Crime incidents by hour
+Arrest vs No Arrest comparison
 
-\- Arrest rate trends by hour
+Time-based crime patterns
 
-\- Arrest outcome distribution
+🔗 Open Interactive Dashboard
+https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisTimeArrestInsights?publish=yes
 
+📍 Geographic Crime Insights
 
+This dashboard highlights crime distribution across Chicago neighborhoods using geographic visualization.
 
-!\[Time Arrest Insights](screenshots/tableau\_dashboard\_time\_arrest\_insights.png)
+It identifies:
 
+Crime hotspot density
 
+Location-based crime patterns
 
-Interactive Dashboard:  
+Geographic distribution of crime types
 
-PASTE\_TABLEAU\_LINK\_HERE
+🔗 Open Interactive Dashboard
+https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisGeographicCrimeInsights?publish=yes
 
+🤖 SAS Enterprise Miner Analysis
 
+Predictive modeling was performed using SAS Enterprise Miner to analyze crime patterns and build predictive models.
 
----
+Methods Used
 
+Clustering Analysis
 
+Decision Tree
 
-\## 3. Geographic \& Crime Insights
+Logistic Regression
 
+Neural Networks
 
+Model Comparison
 
-This dashboard focuses on geographic crime distribution and identifies crime hotspots across Chicago.
+Detailed outputs and datasets can be found in the sas/ folder.
 
+📄 Reports
 
+Project analysis reports included:
 
-It includes:
+Exploratory Data Analysis
 
+Predictive Modeling Results
 
+Model Performance Evaluation
 
-\- Crime hotspot density map
+Reports are available in the reports/ directory.
 
-\- Top crime types by incident count
+📂 Dataset
 
+Crime dataset sourced from:
 
-
-!\[Geographic Insights](screenshots/tableau\_dashboard\_geographic\_crime\_insights.png)
-
-
-
-Interactive Dashboard:  
-
-PASTE\_TABLEAU\_LINK\_HERE
-
-
-
----
-
-
-
-\# SAS Enterprise Miner Analysis
-
-
-
-Predictive analytics was performed using \*\*SAS Enterprise Miner\*\*.
-
-
-
-The models were used to explore patterns and predict crime-related outcomes.
-
-
-
-\### Techniques Used
-
-
-
-\- Decision Tree
-
-\- Logistic Regression
-
-\- Neural Network
-
-\- Clustering Analysis
-
-
-
-Detailed analysis results are included in the \*\*reports folder\*\*.
-
-
-
----
-
-
-
-\# Dataset
-
-
-
-Due to GitHub file size limits, the full dataset is not included in this repository.
-
-
-
-Dataset source:
-
-
-
-Chicago Open Data Portal  
+City of Chicago Open Data Portal
 
 https://data.cityofchicago.org
 
-Dataset used in this project:
+⚠️ Due to GitHub file size limits, full datasets may not be completely included in the repository.
 
-Chicago Crime Data (2018–2023)
+🔎 Key Insights
 
+Theft was the most frequent crime category
 
+Crime activity peaks during midday and evening hours
 
-The dataset includes:
+Arrest outcomes show class imbalance patterns
 
+Geographic analysis highlights high crime concentration areas
 
+👥 Contributors
+Name	Contribution
+Ajay Jayshree	Tableau dashboards, SAS modeling, project documentation
+Atharva Chaskar	Data preprocessing and clustering support
+📌 Project Purpose
 
-\- Crime type
-
-\- Date and time
-
-\- Arrest outcome
-
-\- Location coordinates
-
-\- Crime category
-
-
-
-
-
----
-
-
-
-\# Repository Structure
-
-
-
-chicago-crime-analysis-sas-tableau/
-
-
-
-data/ → Raw datasets
-
-sas/ → SAS Enterprise Miner datasets
-
-tableau/ → Tableau dashboard files
-
-screenshots/ → Dashboard screenshots
-
-reports/ → Exploratory and predictive analysis reports
-
-presentation/ → Project presentation
-
-
-
----
-
-
-
-
-
----
-
-
-
-\# Contributors
-
-
-
-| Name | Contribution |
-
-|-----|-----|
-
-| Ajay Jayshree | Tableau dashboards, predictive analysis, data insights |
-
-| Atharva Chaskar | Data preprocessing, clustering analysis, data insights |
-
-
-
----
-
-
-
-\# Key Insights
-
-
-
-\- Theft is the \*\*most frequent crime category\*\*.
-
-\- Crime incidents peak during \*\*midday and evening hours\*\*.
-
-\- Arrest probability varies depending on \*\*time of the incident\*\*.
-
-\- Geographic analysis highlights \*\*crime hotspots within the city\*\*.
-
-
-
----
-
-
-
-\# License
-
-
-
-This repository is intended for \*\*academic and portfolio purposes\*\*.
-
-
-
+This project was developed as part of MIS 576 – Data Mining coursework and also serves as a data analytics portfolio project demonstrating real-world crime data analysis using visualization and predictive analytics tools.
