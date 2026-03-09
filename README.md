@@ -66,6 +66,8 @@ presentation/
 
 [![Executive Crime Dashboard](screenshots/tableau_executive_crime_dashboard.png)](https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisDashboard?publish=yes)
 
+➡️ **Click on the above image to view the interactive dashboard.**
+
 This dashboard provides a **high-level overview of crime activity in Chicago**, including:
 
 - Total Crime Incidents  
@@ -79,6 +81,8 @@ This dashboard provides a **high-level overview of crime activity in Chicago**, 
 ### ⏱️ Time & Arrest Insights
 
 [![Time & Arrest Insights](screenshots/tableau_dashboard_time_arrest_insights.png)](https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisTimeArrestInsights?publish=yes)
+
+➡️ **Click on the above image to view the interactive dashboard.**
 
 This dashboard analyzes **crime incidents across different hours of the day** and examines arrest outcomes.
 
@@ -94,6 +98,8 @@ Key insights include:
 ### 📍 Geographic Crime Insights
 
 [![Geographic Crime Insights](screenshots/tableau_dashboard_geographic_crime_insights.png)](https://public.tableau.com/app/profile/ajay.jayshree7406/viz/Chicago_Crime_Analysis_Ajay_2018_2020/ChicagoCrimeAnalysisGeographicCrimeInsights?publish=yes)
+
+➡️ **Click on the above image to view the interactive dashboard.**
 
 This dashboard highlights **crime distribution across Chicago neighborhoods** using geographic visualization.
 
