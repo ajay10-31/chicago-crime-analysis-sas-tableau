@@ -121,7 +121,7 @@ Predictive modeling was performed using **SAS Enterprise Miner** to analyze crim
 
 | Clustering Workflow | Ward Cluster Distribution | Variable Importance |
 |---------------------|---------------------------|--------------------|
-| ![](screenshots/sas_clustering_workflow_pipeline.png) | ![](screenshots/sas_ward_cluster_distribution.png) | ![](screenshots/Variable%20Importance%20Plot.png) |
+| ![](screenshots/sas_clustering_workflow_pipeline.png) | ![](screenshots/sas_ward_cluster_distribution.png) | ![Variable Importance](screenshots/variable_importance_plot.png) |
 
 ---
 
