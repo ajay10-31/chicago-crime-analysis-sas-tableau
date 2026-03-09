@@ -210,6 +210,10 @@ Detailed analysis results are included in the \*\*reports folder\*\*.
 
 
 
+Due to GitHub file size limits, the full dataset is not included in this repository.
+
+
+
 Dataset source:
 
 
@@ -217,6 +221,10 @@ Dataset source:
 Chicago Open Data Portal  
 
 https://data.cityofchicago.org
+
+Dataset used in this project:
+
+Chicago Crime Data (2018–2023)
 
 
 
@@ -233,6 +241,8 @@ The dataset includes:
 \- Location coordinates
 
 \- Crime category
+
+
 
 
 
