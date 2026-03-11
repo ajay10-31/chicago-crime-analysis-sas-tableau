@@ -177,6 +177,15 @@ https://data.cityofchicago.org
 
 ---
 
+## 📄 Project Report
+
+A detailed analysis of the project methodology, clustering analysis, and predictive modeling results can be found in the full project report.
+
+📄 **Download Full Report**  
+[Chicago Crime Analysis Project Report](reports/InsightOps.MIS576.ProjectReport.pdf)
+
+---
+
 ## 👥 Contributors
 
 | Name | Contribution |
